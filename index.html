@@ -8,13 +8,30 @@
 </head>
 
 <style>
-  div{
+
+  body{
+    margin: 50px 200px;
+  }
+    
+  h2{
+    
+    
+  }
+  .steps{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .step {
     border: 2px solid rgb(219, 205, 8);
     height: 60px; 
     width: 200px;
     font-size: 22px;
     margin-bottom: 22px;
-    background-color: rgb(231, 203, 166);
+    background-color: rgb(236, 172, 87);
     border-radius: 5px;
   }
 
@@ -23,11 +40,27 @@
     height: auto;
   }
 
+  .item1,
+  .item2,
+  .item3 {
+    display: flex;
+    width: 800px;
+    height: auto;
+  }
+  .item p{
+    text-align: justify;
+    margin-left: 20px;
+  }
+
+  #img1{
+    margin: 10px 0px 10px 320px;
+  }
+
 </style>
 <body>
   <h2 style="color:brown">Novo Serviço – Monitoramento de riscos e atendimento à legislação por inteligência artificial integrada via API às ferramentas GNC, Agile, GRISCO, PGR etc... </h2>
 
-  <img src="./Imagem1.jpg" height="200px" alt="">
+  <img id="img1" src="./Imagem1.jpg" height="200px" alt="">
 
   <p style="font-size: 18px;">
 I.A. fornecida por https://openai.com/ 
@@ -36,11 +69,15 @@ ChatGPT3 (acesso permitido ao público a partir de 2021)
 
 <h2 style="color:brown">Estrutura do serviço de Prevenção de Riscos (SST, MA, QL, SAL) – seria cobrada a implantação + mensalidade</h2>
 
-<div >1 Captura da movimentação</div>
-<div >2 Treinamento da IA</div>
-<div >3 Categorização dos riscos</div>
-<div >4 Disparos via API</div>
-<div >5 Conexão com os subtemas do Agile</div>
+<div class="steps">
+  <div class="step">1 Captura da movimentação</div>
+  <div class="step">2 Treinamento da IA</div>
+  <div class="step">3 Categorização dos riscos</div>
+  <div class="step">4 Disparos via API</div>
+  <div class="step">5 Conexão com os subtemas do Agile</div>
+</div>
+
+
 <div id="result">
   <h2>Ações conectadas</h2>
   Criação automática da NC + análise de causa pré-configurada + medida de controle – envio de email aos responsáveis; <br> <br>
@@ -56,7 +93,22 @@ Sugestão: criar um só sistema de legislação para se comunicar com o GPT3 >> 
   
 </div>
 
+<h2>Exemplos de aplicação (já em pleno funcionamento no mudo)</h2>
 
+<div class="item">
+  <div class="item1">
+  <img src="./1.png" alt="">
+  <p>Após o treinamento da IA, as desconformidades são automaticamente gravadas no GNC e as obrigações dos temas conectados às capturas (NR6 e outras no caso), passariam para Não Atendidas + plano de ação citando a ocorrência e determinando prazo para correção. </p>
+  </div>
+  <div class="item2">
+  <img src="./2.png" alt="">
+  <p>Após o treinamento da IA, as desconformidades são automaticamente gravadas no GNC e as obrigações dos temas conectados às capturas (NR6 e outras no caso), passariam para Não Atendidas + plano de ação citando a ocorrência e determinando prazo para correção. </p>
+  </div>
+  <div class="item3">
+  <img src="./3.png" alt="">
+  <p>Após o treinamento da IA, as desconformidades são automaticamente gravadas no GNC e as obrigações dos temas conectados às capturas (NR6 e outras no caso), passariam para Não Atendidas + plano de ação citando a ocorrência e determinando prazo para correção. </p>
+  </div>
+</div>
 
 
 
